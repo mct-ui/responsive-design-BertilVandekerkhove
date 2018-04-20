@@ -183,6 +183,12 @@ a:visited, a:active, a:hover, a:focus {
     padding: 24px 24px 0;
 }
 
+/* color modifiers */
+
+.o-row--neutral-x-light {
+    background-color: #F7F7FA;
+}
+
 /* size modifiers */
 
 .o-row--lg {
