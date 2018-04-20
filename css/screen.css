@@ -189,6 +189,12 @@ a:visited, a:active, a:hover, a:focus {
     background-color: #F7F7FA;
 }
 
+.o-row--gradient {
+    background: linear-gradient(to top right, #5051DB 0%, #3887F7 100%);
+    color: white;
+    /* Fx 10+, Op 11.6+, Ch 26+, IE 10 */
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -577,6 +583,53 @@ a:visited, a:active, a:hover, a:focus {
 .c-link-cta:hover::after {
     transform: scaleX(1);
     background-color: #3E3EA8;
+}
+
+/* Inverted */
+
+.c-link-cta--inverse, .c-link-cta--inverse:visited, .c-link-cta--inverse:active {
+    color: #fff;
+}
+
+.c-link-cta--inverse::after {
+    background-color: #fff;
+}
+
+.c-link-cta--inverse:hover::after {
+    background-color: #fff;
+}
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {}
+
+.c-footer__logo {}
+
+.c-footer__nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .c-footer {}
+    .c-footer__logo {}
+    .c-footer__nav {}
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .c-footer__logo {}
+    .c-footer__logo .c-logo {}
+    .c-footer__nav {
+        display: block;
+    }
 }
 
 /*------------------------------------*\
